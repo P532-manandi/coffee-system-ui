@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5e6c8;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.logo h1 {
+    color: #c17c50;
+    font-size: 24px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.status h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.order-button {
+    background-color: #d6be98;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 350px;
+    height: 150px;
+}
+
+.screen-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.option-card {
+    background-color: #d6be98;
+    color: #000;
+    border-radius: 8px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.option-card:hover {
+    background-color: #a08e6e;
+}
+
+.option-card.selected {
+    background-color: #8d7b5e;
+    color: #fff;
+}
+
+
+
+#condiments-screen {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.condiments-grid {
+    max-width: 500px;
+}
+
+.order-summary {
+    width: 300px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f5e6c8;
+}
+
+.order-summary h2 {
+    color: #c17c50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.selected-item {
+    background-color: #d6be98;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.condiment-item {
+    background-color: #d6be98;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.confirm-button {
+    background-color: #c9a66b;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confirmation-content {
+    text-align: center;
+}
+
+.confirmation-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.confirmation-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.confirmation-content p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#order-details {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 30px 0;
+}
