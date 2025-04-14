@@ -85,7 +85,7 @@ function placeOrder() {
   showScreen("confirmation-screen");
 
   // Call the backend API
-  fetch("http://localhost:8080/orders", {
+  fetch("https://coffee-order-cpwn.onrender.com/orders", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
