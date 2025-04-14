@@ -1,95 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Coffee Order System</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <header>
-            <div class="logo" onclick="showScreen('start-screen')">
+            <div class="logo"
+                 onclick="showScreen('start-screen')">
                 <h1>Coffee Order<br>System</h1>
             </div>
-            <div class="status" >
+            <div class="status">
                 <h2>Order Status</h2>
             </div>
         </header>
 
-        
-        <div class="screen" id="start-screen">
+
+        <div class="screen"
+             id="start-screen">
             <div class="center-content">
-                <button class="order-button" onclick="showScreen('beverage-screen')">
+                <button class="order-button"
+                        onclick="showScreen('beverage-screen')">
                     Start your order here
                 </button>
             </div>
         </div>
 
-        
-        <div class="screen" id="beverage-screen" style="display: none;">
+
+        <div class="screen"
+             id="beverage-screen"
+             style="display: none;">
             <h2 class="screen-title">Select the beverage</h2>
             <div class="options-grid">
-                <div class="option-card" onclick="selectBeverage('Dark Roast')">
+                <div class="option-card"
+                     onclick="selectBeverage('Dark Roast')">
                     <span>Dark Roast</span>
                 </div>
-                <div class="option-card" onclick="selectBeverage('Espresso')">
+                <div class="option-card"
+                     onclick="selectBeverage('Espresso')">
                     <span>Espresso</span>
                 </div>
-                <div class="option-card" onclick="selectBeverage('House Blend')">
+                <div class="option-card"
+                     onclick="selectBeverage('House Blend')">
                     <span>House Blend</span>
                 </div>
-                <div class="option-card" onclick="selectBeverage('Decaf')">
+                <div class="option-card"
+                     onclick="selectBeverage('Decaf')">
                     <span>Decaf</span>
                 </div>
             </div>
-            
+
         </div>
 
-        
-        <div class="screen" id="condiments-screen" style="display: none;">
+
+        <div class="screen"
+             id="condiments-screen"
+             style="display: none;">
             <div class="main-content">
                 <h2 class="screen-title">Add the condiments</h2>
                 <div class="options-grid condiments-grid">
-                    <div class="option-card" onclick="toggleCondiment('Milk')">
+                    <div class="option-card"
+                         onclick="toggleCondiment('Milk')">
                         <span>Milk</span>
                     </div>
-                    <div class="option-card" onclick="toggleCondiment('Mocha')">
+                    <div class="option-card"
+                         onclick="toggleCondiment('Mocha')">
                         <span>Mocha</span>
                     </div>
-                    <div class="option-card" onclick="toggleCondiment('Soy')">
+                    <div class="option-card"
+                         onclick="toggleCondiment('Soy')">
                         <span>Soy</span>
                     </div>
-                    <div class="option-card" onclick="toggleCondiment('Whip')">
+                    <div class="option-card"
+                         onclick="toggleCondiment('Whip')">
                         <span>Whip</span>
                     </div>
                 </div>
             </div>
             <div class="order-summary">
                 <h2>My Order</h2>
-                <div class="selected-item" id="selected-beverage" onclick="showScreen('beverage-screen')">
+                <div class="selected-item"
+                     id="selected-beverage"
+                     onclick="showScreen('beverage-screen')">
                     Selected Beverage
                 </div>
                 <div id="selected-condiments">
-                    
+
                 </div>
-                <button class="confirm-button" onclick="placeOrder()">
+                <button class="confirm-button"
+                        onclick="placeOrder()">
                     Confirm Order
                 </button>
             </div>
         </div>
 
-        
-        <div class="screen" id="confirmation-screen" style="display: none;">
+
+        <div class="screen"
+             id="confirmation-screen"
+             style="display: none;">
             <div class="confirmation-content">
-                <h2>Order Placed:</h2>
-                <h3 id="order-id">Order id: 24</h3>
-                <p id="order-details">Dark roast with milk and double mocha!</p>
-                <p id="order-total">Total: $4.5</p>
+                <h2>Thank You for Your Order!</h2>
+                <div class="order-card">
+                    <div class="order-header">
+                        <h3 id="order-id">Order id: 24</h3>
+                    </div>
+                    <div class="order-body">
+                        <div class="coffee-icon">☕</div>
+                        <p id="order-details"
+                           class="order-description">Dark roast with milk and double mocha!</p>
+                        <p id="order-total"
+                           class="order-price">Total: $4.5</p>
+                    </div>
+                    <div class="order-footer">
+                        <p class="order-message">Your coffee will be ready shortly!</p>
+                        <button class="new-order-btn"
+                                onclick="showScreen('start-screen')">Place New Order</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

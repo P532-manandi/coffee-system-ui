@@ -1,193 +1,294 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f5e6c8;
-    min-height: 100vh;
+  background-color: #f5e6c8;
+  min-height: 100vh;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    min-height: 100vh;
-    position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .logo h1 {
-    color: #c17c50;
-    font-size: 24px;
-    line-height: 1.2;
-    cursor: pointer;
+  color: #c17c50;
+  font-size: 24px;
+  line-height: 1.2;
+  cursor: pointer;
 }
 
 .status h2 {
-    font-size: 24px;
-    color: #000;
+  font-size: 24px;
+  color: #000;
 }
 
 .screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 70vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  width: 100%;
 }
 
 .center-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .order-button {
-    background-color: #d6be98;
-    color: #000;
-    border: none;
-    border-radius: 8px;
-    padding: 20px 40px;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    width: 350px;
-    height: 150px;
+  background-color: #d6be98;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 350px;
+  height: 150px;
 }
 
 .screen-title {
-    font-size: 28px;
-    margin-bottom: 40px;
-    text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .options-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .option-card {
-    background-color: #d6be98;
-    color: #000;
-    border-radius: 8px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 24px;
-    font-weight: bold;
+  background-color: #d6be98;
+  color: #000;
+  border-radius: 8px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .option-card:hover {
-    background-color: #a08e6e;
+  background-color: #a08e6e;
 }
 
 .option-card.selected {
-    background-color: #8d7b5e;
-    color: #fff;
+  background-color: #8d7b5e;
+  color: #fff;
 }
 
-
-
 #condiments-screen {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .main-content {
-    flex: 1;
-    padding-right: 20px;
+  flex: 1;
+  padding-right: 20px;
 }
 
 .condiments-grid {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .order-summary {
-    width: 300px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #f5e6c8;
+  width: 300px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f5e6c8;
 }
 
 .order-summary h2 {
-    color: #c17c50;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
+  color: #c17c50;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .selected-item {
-    background-color: #d6be98;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: bold;
+  background-color: #d6be98;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .condiment-item {
-    background-color: #d6be98;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    text-align: center;
+  background-color: #d6be98;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .confirm-button {
-    background-color: #c9a66b;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 15px;
-    width: 100%;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: #c9a66b;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+/* Enhanced confirmation screen styles */
 .confirmation-content {
-    text-align: center;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
 }
 
 .confirmation-content h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #c17c50;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.confirmation-content h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.order-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.confirmation-content p {
-    font-size: 20px;
-    margin-bottom: 15px;
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-header {
+  background-color: #c17c50;
+  color: white;
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.order-header h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.order-body {
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.coffee-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.order-description {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+}
+
+.order-price {
+  font-size: 22px;
+  color: #c17c50;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.order-footer {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.order-message {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.new-order-btn {
+  background-color: #c17c50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-order-btn:hover {
+  background-color: #a06841;
 }
 
 #order-details {
-    font-weight: bold;
-    font-size: 24px;
-    margin: 30px 0;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+/* Enhanced beverage and condiment styles */
+.beverage-name {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #c17c50;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.condiments-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.condiment-badge {
+  background-color: #e9d5b9;
+  color: #7d5a44;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d6be98;
 }
